@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CyberLab Quest — a self-paced cybersecurity micro-learning and lab tracker (HTML5 stage)." />
+  <title>CyberLab Quest • Home</title>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>CyberLab Quest</h1>
+    <p>
+      <strong>Self-paced cybersecurity micro-learning</strong> + <em>lab tracking</em>
+      <span aria-label="sparkles">✨</span>
+    </p>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="modules.html">Modules</a></li>
+        <li><a href="labs.html">Lab Library</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About & Contact</a></li>
+      </ul>
+    </nav>
+    <hr />
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="welcome">
+      <h2 id="welcome">Welcome</h2>
+
+      <article>
+        <h3>What you can do here (now)</h3>
+        <ul>
+          <li>Browse learning modules and lab ideas (static content)</li>
+          <li>Track progress with HTML5 <code>&lt;progress&gt;</code> + <code>&lt;meter&gt;</code></li>
+          <li>Use a quick journal form (data won’t persist until Week 4–5)</li>
+        </ul>
+
+        <p>
+          Tip: This project is designed to evolve:
+          <mark>Week 2–3</mark> add CSS3 themes/layout;
+          <mark>Week 4–5</mark> add JavaScript for saving progress, filtering labs, etc.
+        </p>
+      </article>
+
+      <aside aria-label="Dashboard snapshot">
+        <h3>My Progress Snapshot (HTML5 widgets)</h3>
+
+        <p>
+          Course completion:
+          <progress value="20" max="100">20%</progress>
+          <small>(Demo value)</small>
+        </p>
+
+        <p>
+          Skill meter:
+          <meter min="0" max="10" value="4" low="3" high="7" optimum="8">
+            4 out of 10
+          </meter>
+          <small>Beginner → Intermediate</small>
+        </p>
+
+        <p>
+          Next study session:
+          <time datetime="2026-03-01T19:00">March 1, 2026 • 7:00 PM</time>
+        </p>
+      </aside>
+    </section>
+
+    <hr />
+
+    <section aria-labelledby="featured">
+      <h2 id="featured">Featured Module</h2>
+
+      <figure>
+        <picture>
+          <source srcset="https://picsum.photos/seed/cyberlab/1200/500" media="(min-width: 800px)" />
+          <img src="https://picsum.photos/seed/cyberlab/800/400" alt="Abstract tech image placeholder" width="800" height="400" />
+        </picture>
+        <figcaption>
+          <strong>Module 1:</strong> Logging & Detection Basics — understand events, alerts, and context.
+        </figcaption>
+      </figure>
+
+      <details>
+        <summary>What you’ll learn (expand)</summary>
+        <ul>
+          <li>Difference between logs, events, and alerts</li>
+          <li>Why context matters (asset criticality, user roles)</li>
+          <li>Basic triage steps and evidence notes</li>
+        </ul>
+      </details>
+    </section>
+
+    <hr />
+
+    <section aria-labelledby="journal">
+      <h2 id="journal">Quick Study Journal (static for now)</h2>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Session entry</legend>
+
+          <p>
+            <label for="topic">Topic</label><br />
+            <input id="topic" name="topic" type="text" placeholder="e.g., Windows Event Logs" required />
+          </p>
+
+          <p>
+            <label for="minutes">Minutes studied</label><br />
+            <input id="minutes" name="minutes" type="number" min="5" max="300" step="5" value="30" />
+          </p>
+
+          <p>
+            <label for="mood">Confidence level</label><br />
+            <input list="confidence" id="mood" name="mood" placeholder="Choose or type..." />
+            <datalist id="confidence">
+              <option value="Low"></option>
+              <option value="Medium"></option>
+              <option value="High"></option>
+            </datalist>
+          </p>
+
+          <p>
+            <label for="notes">Notes</label><br />
+            <textarea id="notes" name="notes" rows="5" placeholder="Key takeaways..."></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Submit (demo)</button>
+            <button type="reset">Reset</button>
+          </p>
+
+          <p>
+            <small>
+              Note: This form does not save yet. In Week 4–5, JavaScript can store entries in
+              <abbr title="Local Storage">LS</abbr> or a database.
+            </small>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>
+      <small>
+        © <time datetime="2026">2026</time> CyberLab Quest • Built with HTML5 semantics
+      </small>
+    </p>
+  </footer>
+</body>
+</html>

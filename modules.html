@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CyberLab Quest • Modules</title>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Modules</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="modules.html" aria-current="page">Modules</a></li>
+        <li><a href="labs.html">Lab Library</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About & Contact</a></li>
+      </ul>
+    </nav>
+    <hr />
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="path">
+      <h2 id="path">Learning Path</h2>
+      <p>
+        Each module includes reading goals, mini tasks, and a lab suggestion. Later (JS),
+        you can mark completion and filter by difficulty.
+      </p>
+
+      <ol>
+        <li>
+          <article>
+            <h3>Module 1 — Logs & Detection</h3>
+            <p><strong>Goal:</strong> Understand what logs are and how alerts are created.</p>
+            <ul>
+              <li>Read: Event vs alert</li>
+              <li>Task: Identify 5 log sources in a typical company</li>
+              <li>Lab: Parse sample logs (see Lab Library)</li>
+            </ul>
+            <p>
+              Difficulty:
+              <meter min="0" max="5" value="2">2/5</meter>
+            </p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <h3>Module 2 — Authentication & MFA</h3>
+            <p><strong>Goal:</strong> Explore password attacks and MFA defenses.</p>
+            <ul>
+              <li>Read: Brute force vs spraying</li>
+              <li>Task: Draft an MFA rollout checklist</li>
+              <li>Lab: Simulate login telemetry review</li>
+            </ul>
+            <p>
+              Difficulty:
+              <meter min="0" max="5" value="3">3/5</meter>
+            </p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <h3>Module 3 — Web Basics & OWASP</h3>
+            <p><strong>Goal:</strong> Learn common web vulnerabilities at a high level.</p>
+            <ul>
+              <li>Read: OWASP Top 10 overview</li>
+              <li>Task: Map 3 risks to CIA</li>
+              <li>Lab: Request/response anatomy</li>
+            </ul>
+            <p>
+              Difficulty:
+              <meter min="0" max="5" value="4">4/5</meter>
+            </p>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <section aria-labelledby="planner">
+      <h2 id="planner">Study Planner (static)</h2>
+
+      <table>
+        <caption>Suggested weekly schedule</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Focus</th>
+            <th scope="col">Time</th>
+            <th scope="col">Output</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Mon</th>
+            <td>Module reading</td>
+            <td><time datetime="PT45M">45 min</time></td>
+            <td>Notes</td>
+          </tr>
+          <tr>
+            <th scope="row">Wed</th>
+            <td>Hands-on mini task</td>
+            <td><time datetime="PT60M">60 min</time></td>
+            <td>Checklist / diagram</td>
+          </tr>
+          <tr>
+            <th scope="row">Sat</th>
+            <td>Lab practice</td>
+            <td><time datetime="PT90M">90 min</time></td>
+            <td>Lab journal entry</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <details>
+        <summary>Accessibility note</summary>
+        <p>
+          This table uses <code>caption</code>, <code>thead</code>, and correct header scopes for screen readers.
+        </p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p><small>© 2026 CyberLab Quest</small></p>
+  </footer>
+</body>
+</html>

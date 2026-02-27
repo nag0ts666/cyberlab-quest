@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CyberLab Quest • About & Contact</title>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>About & Contact</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="modules.html">Modules</a></li>
+        <li><a href="labs.html">Lab Library</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html" aria-current="page">About & Contact</a></li>
+      </ul>
+    </nav>
+    <hr />
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="about">
+      <h2 id="about">Project overview</h2>
+
+      <p>
+        <strong>CyberLab Quest</strong> is a self-paced portal for beginner cybersecurity learners.
+        It starts as static HTML5 pages (Weeks 1–2), then becomes styled (Weeks 2–3) and interactive (Weeks 4–5).
+      </p>
+
+      <ul>
+        <li><strong>Audience:</strong> Students and early-career learners</li>
+        <li><strong>Core features:</strong> Modules, lab library, glossary, progress journal</li>
+        <li><strong>Optional future:</strong> Save progress to a database</li>
+      </ul>
+
+      <details>
+        <summary>Future enhancements roadmap</summary>
+        <ul>
+          <li><strong>CSS:</strong> responsive layout, theme toggle (light/dark)</li>
+          <li><strong>JS:</strong> save journal entries, filter labs, completion badges</li>
+          <li><strong>DB (optional):</strong> user profiles + cloud sync</li>
+        </ul>
+      </details>
+    </section>
+
+    <hr />
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact (static form)</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send a message</legend>
+
+          <p>
+            <label for="name">Name</label><br />
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </p>
+
+          <p>
+            <label for="email">Email</label><br />
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </p>
+
+          <p>
+            <label for="reason">Reason</label><br />
+            <input id="reason" name="reason" list="reasons" placeholder="Choose..." />
+            <datalist id="reasons">
+              <option value="Feedback"></option>
+              <option value="Bug report"></option>
+              <option value="Feature request"></option>
+              <option value="Collaboration"></option>
+            </datalist>
+          </p>
+
+          <p>
+            <label for="msg">Message</label><br />
+            <textarea id="msg" name="msg" rows="6" required></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Send (demo)</button>
+          </p>
+
+          <p>
+            <small>
+              Privacy: No data is stored in Week 1–2. Storage can be added in JS/DB phases.
+            </small>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+    <hr />
+
+    <section aria-labelledby="html5">
+      <h2 id="html5">HTML5 tag showcase</h2>
+      <p>
+        Example code snippet:
+        <code>&lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;details&gt;, &lt;progress&gt;, &lt;meter&gt;</code>
+      </p>
+
+      <dialog open aria-label="Demo dialog (static)">
+        <p><strong>Demo dialog:</strong> In Week 4–5, this can be opened/closed via JavaScript.</p>
+        <p><small>(Some browsers allow it to render open without JS.)</small></p>
+      </dialog>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p><small>© 2026 CyberLab Quest</small></p>
+  </footer>
+</body>
+</html>

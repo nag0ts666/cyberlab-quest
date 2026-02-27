@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CyberLab Quest • Lab Library</title>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Lab Library</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="modules.html">Modules</a></li>
+        <li><a href="labs.html" aria-current="page">Lab Library</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About & Contact</a></li>
+      </ul>
+    </nav>
+    <hr />
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="search">
+      <h2 id="search">Find a lab (static UI)</h2>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Lab filters (UI only for now)</legend>
+
+          <p>
+            <label for="difficulty">Difficulty</label><br />
+            <select id="difficulty" name="difficulty">
+              <option value="">Any</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="topic">Topic keyword</label><br />
+            <input id="topic" name="topic" type="search" placeholder="e.g., logs, web, auth" />
+          </p>
+
+          <p>
+            <label for="format">Lab format</label><br />
+            <input list="formats" id="format" name="format" placeholder="Choose..." />
+            <datalist id="formats">
+              <option value="Checklist"></option>
+              <option value="Packet analysis"></option>
+              <option value="Web request walkthrough"></option>
+              <option value="Threat modeling"></option>
+            </datalist>
+          </p>
+
+          <p>
+            <button type="submit">Apply (demo)</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+    <hr />
+
+    <section aria-labelledby="catalog">
+      <h2 id="catalog">Lab Catalog</h2>
+
+      <article>
+        <h3>Lab A — Log Triage Notes</h3>
+        <p>
+          Create a triage template. Practice writing evidence notes using
+          <abbr title="Time, Action, Artifact">TAA</abbr>.
+        </p>
+
+        <details>
+          <summary>Steps</summary>
+          <ol>
+            <li>Pick a scenario: suspicious login</li>
+            <li>Write 5 questions to ask first</li>
+            <li>Draft a final summary in 5–7 lines</li>
+          </ol>
+        </details>
+
+        <p>
+          Completion:
+          <progress value="10" max="100">10%</progress>
+        </p>
+      </article>
+
+      <article>
+        <h3>Lab B — HTTP Anatomy</h3>
+        <p>
+          Learn request/response structure and header meaning. Practice reading
+          <code>GET</code> and <code>POST</code>.
+        </p>
+
+        <pre><code>GET /login HTTP/1.1
+Host: example.com
+User-Agent: DemoBrowser
+Accept: */*</code></pre>
+
+        <p>
+          Try typing this in your notes:
+          <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy, <kbd>Ctrl</kbd> + <kbd>V</kbd> to paste.
+        </p>
+      </article>
+
+      <article>
+        <h3>Lab C — Mini Threat Model</h3>
+        <p>
+          Pick a simple app (notes app). Identify assets, threats, and mitigations.
+        </p>
+
+        <table>
+          <caption>Threat model quick view</caption>
+          <thead>
+            <tr>
+              <th scope="col">Asset</th>
+              <th scope="col">Threat</th>
+              <th scope="col">Mitigation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>User accounts</td>
+              <td>Credential stuffing</td>
+              <td>MFA + rate limiting</td>
+            </tr>
+            <tr>
+              <td>Notes data</td>
+              <td>Unauthorized access</td>
+              <td>Access control + encryption</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <hr />
+
+    <section aria-labelledby="media">
+      <h2 id="media">Media corner (HTML5 audio/video)</h2>
+
+      <article>
+        <h3>Short audio placeholder</h3>
+        <p><small>(Uses a public domain sample; replace later with your own recording.)</small></p>
+        <audio controls>
+          <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+          <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+
+      <article>
+        <h3>Short video placeholder</h3>
+        <video controls width="420">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </article>
+    </section>
+
+    <hr />
+
+    <section aria-labelledby="future">
+      <h2 id="future">Planned Week 4–5 feature (HTML5 <code>&lt;template&gt;</code>)</h2>
+      <p>
+        This template can be cloned with JavaScript later to render lab cards dynamically.
+      </p>
+
+      <template id="lab-card-template">
+        <article>
+          <h3>Lab Title</h3>
+          <p>Lab description…</p>
+          <progress value="0" max="100">0%</progress>
+        </article>
+      </template>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p><small>© 2026 CyberLab Quest</small></p>
+  </footer>
+</body>
+</html>

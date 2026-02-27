@@ -1,0 +1,1 @@
+Add images/icons here later (Week 2–3 CSS styling can reference these).
